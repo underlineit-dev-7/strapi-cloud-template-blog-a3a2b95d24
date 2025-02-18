@@ -62,6 +62,14 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface TagsTags extends Struct.ComponentSchema {
+  collectionName: 'components_tags_tags';
+  info: {
+    displayName: 'tags';
+  };
+  attributes: {};
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -70,6 +78,7 @@ declare module '@strapi/strapi' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'tags.tags': TagsTags;
     }
   }
 }
