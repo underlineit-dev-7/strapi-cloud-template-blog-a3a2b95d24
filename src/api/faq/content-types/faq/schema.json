@@ -4,7 +4,8 @@
   "info": {
     "singularName": "faq",
     "pluralName": "faqs",
-    "displayName": "Faq"
+    "displayName": "Faq",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,17 +17,6 @@
     },
     "answer": {
       "type": "string"
-    },
-    "category": {
-      "type": "enumeration",
-      "enum": [
-        "Account",
-        "Billing",
-        "Shipping"
-      ]
-    },
-    "tags": {
-      "type": "json"
     }
   }
 }
